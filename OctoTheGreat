@@ -1,0 +1,33 @@
+// Module 3 Discussion: C# Class Example
+
+// Creating a class with fields, properties, constructor, and method
+public class Octopus
+{
+    public string Name { get; }
+    public string Color { get; }
+    public int Legs { get; } = 25; // 25 legs
+
+    // Constructor
+    public Octopus(string name, string color)
+    {
+        Name = name;
+        Color = color;
+    }
+
+    // Method
+    public void DisplayInfo()
+    {
+        Console.WriteLine($"The octopus named {Name} has {Legs} legs and is {Color}.");
+    }
+}
+
+// Main Program to create an instance of Octopus
+class Program
+{
+    static void Main()
+    {
+        // Object initialization
+        Octopus o = new Octopus("OctoTheGreat", "Sparkly Blue");
+        o.DisplayInfo();
+    }
+}
